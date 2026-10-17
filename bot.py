@@ -3,7 +3,7 @@ from threading import Thread
 import telebot
 from flask import Flask
 
-TOKEN = "8711108820:AAGvsyP-XZFD1n5Hv5ls1QS5FbrRCQTy56Q"
+TOKEN = "8711108820:AAEuMy0b1xvqCLHo2pdyBFYi5cLBy-_maw"
 bot = telebot.TeleBot(TOKEN)
 
 # Mini-serveur web pour garder Render heureux

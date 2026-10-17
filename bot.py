@@ -3,7 +3,8 @@ from threading import Thread
 import telebot
 from flask import Flask
 
-TOKEN = "8711108820:AAEuMy0b1xvqCLHo2pdyBFYi5cLBy-_maw"
+# Récupération sécurisée depuis Render
+TOKEN = os.environ.get('BOT_TOKEN')
 bot = telebot.TeleBot(TOKEN)
 
 app = Flask('')
@@ -25,4 +26,5 @@ if __name__ == '__main__':
     t.start()
     
     bot.infinity_polling()
-  
+    
+    
